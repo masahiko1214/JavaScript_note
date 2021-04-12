@@ -69,3 +69,13 @@ console.log(characters[1].name);
 const greet = () =>{
 console.log("こんにちは！");
 }
+
+//クラスについて
+class Animal {
+}
+
+// Animalクラスのインスタンスを定数animalに代入、newがインスタンスの先頭につくことに注意
+const animal =new Animal();
+
+// 定数animalの値を出力
+console.log(animal);
