@@ -72,10 +72,18 @@ console.log("こんにちは！");
 
 //クラスについて
 class Animal {
+  // 引数に「name」と「age」を追加
+  constructor(name,age) {
+    // 「"レオ"」の代わりに引数nameの値を代入
+    this.name = name;
+    
+    // 「3」の代わりに引数ageの値を代入
+    this.age = age;
+  }
 }
 
-// Animalクラスのインスタンスを定数animalに代入、newがインスタンスの先頭につくことに注意
-const animal =new Animal();
+// 引数に「"モカ"」と「8」を渡す
+const animal = new Animal("モカ",8);
 
-// 定数animalの値を出力
-console.log(animal);
+console.log(`名前: ${animal.name}`);
+console.log(`年齢: ${animal.age}`);
