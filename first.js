@@ -1,8 +1,14 @@
 //ここから復習
 
-import chalk from "chalk";
+const chara = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ仙人"];
 
-console.log(chalk.yellow("名前は高村です"));
+console.log(chara);
+
+// pushメソッドを使って配列charactersに、文字列「とりずきん」を追加してください
+chara.push("とりずきん");
+
+// 配列charactersを出力してください
+console.log(chara);
 
 console.log("Hello World");
 console.log("20"+"15");
