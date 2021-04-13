@@ -10,6 +10,10 @@ chara.push("とりずきん");
 // 配列charactersを出力してください
 console.log(chara);
 
+chara.forEach((character) =>{
+  console.log(character);
+});
+
 console.log("Hello World");
 console.log("20"+"15");
 // 変数lengthは半径
