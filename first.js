@@ -1,5 +1,9 @@
 //ここから復習
 
+import chalk from "chalk";
+
+console.log(chalk.yellow("名前は高村です"));
+
 console.log("Hello World");
 console.log("20"+"15");
 // 変数lengthは半径
