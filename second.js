@@ -38,3 +38,8 @@ const call = (callback) => {
 
 // 関数printWankoを引数に渡して関数callを実行
 call(printWanko);
+
+// 引数で関数を定義して渡す
+call(() => {
+  console.log("ひつじ仙人");
+});
