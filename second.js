@@ -24,3 +24,17 @@ const fullNames = names.map((name)=>{
 
 // 定数fullNamesを出力
 console.log(fullNames);
+
+const printWanko = () => {
+  console.log("にんじゃわんこ");
+};
+
+// 関数callにcallbackという名前の引数を追加
+const call = (callback) => {
+  console.log("コールバック関数を呼び出します。");
+  // 引数に渡したcallbackを呼び出す
+  callback();
+};
+
+// 関数printWankoを引数に渡して関数callを実行
+call(printWanko);
