@@ -84,3 +84,5 @@ const greet = () =>{
 console.log("こんにちは！");
 }
 
+
+console.log("こんにちは！");
