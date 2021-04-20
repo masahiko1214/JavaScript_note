@@ -10,6 +10,7 @@ function incrementFactory() {
   return a;
 }
 
+// increment = incrementFactory();にて変数increment内に関数が返ってきている為実行する事が可能
 const increment = incrementFactory();
 
 increment();
