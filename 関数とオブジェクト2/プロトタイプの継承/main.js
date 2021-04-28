@@ -18,3 +18,4 @@ const taro = new Japanese('Taro', 23);
 console.log(taro);
 
 taro.hello();
+
