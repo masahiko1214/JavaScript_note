@@ -1,3 +1,4 @@
+// 既にあるものを簡単にかける様にしたものがクラス =>  シンタックスシュガーともいう
 class Person{
 
   constructor(name, age) {
