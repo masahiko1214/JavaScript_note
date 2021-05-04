@@ -13,7 +13,6 @@ return{
 
 next(){
 	let key = keys[i++];
-	console.log(_this)
 return{
 	value: [key, _this[key]],
 	done: i > keys.length
@@ -25,6 +24,6 @@ return{
 }
 
 /* const items = Object.entries(obj); */
-for (let item of items) {
-	console.log(item);
+for (let [v,k] of items) {
+	console.log(v,k);
 }
