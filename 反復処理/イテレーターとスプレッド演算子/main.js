@@ -13,3 +13,22 @@ return ret;
 }
 const result = sum(1,2,3,4);
 console.log(result)
+
+
+const obj1 = {
+  prop1: 'value1',
+  prop2: 'value2',
+  prop3: 'value3'
+}
+
+/* Object.prototype[Symbol.iterator] = function*(){
+  for(let key in this){
+    yield [key ,this[key]];
+  }
+  } */
+
+
+
+const arry3 = {...obj1};
+console.log(arry3);
+
