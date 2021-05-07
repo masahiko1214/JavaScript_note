@@ -9,7 +9,7 @@ btn.addEventListener('click', function task2() {
 function a() {
     setTimeout(function task1() {
         console.log('task1 done');
-    }, 2000);
+    }, 1000);
 
     const startTime = new Date();
     while (new Date() - startTime < 5000);
