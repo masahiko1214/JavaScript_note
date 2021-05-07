@@ -1,3 +1,5 @@
+
+// 非同期処理はメインスレッドから切り離される
 function sleep(ms) {
   const startTime = new Date();
   while (new Date() - startTime < ms);
