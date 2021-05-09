@@ -1,15 +1,24 @@
 new Promise(function (resolve,reject){
   console.log('promise');
-  resolve();
-}).then(function(){
+
+  setTimeout(function(){
+     resolve("hello")
+  },1000)
+  
+  // reject("bye");
+
+}).then(function(data){
+  console.log('then: ' + data);
+  // throw new Error();
+  return data;
+}).then(function(data){
+  console.log('then ' + data);
+}).then(function(data){
   console.log('then');
-  throw new Error();
-}).then(function(){
-  console.log('then');
-}).then(function(){
-  console.log('then');
-}).catch(function(){
-  console.log('catch');
+}).catch(function(data){
+  console.log('catch ' + data);
+}).finally(function(data){
+  console.log('finally');
 });
 
 console.log('global end');
