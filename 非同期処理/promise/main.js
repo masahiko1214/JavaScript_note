@@ -3,6 +3,13 @@ new Promise(function (resolve,reject){
   resolve();
 }).then(function(){
   console.log('then');
-})
+  throw new Error();
+}).then(function(){
+  console.log('then');
+}).then(function(){
+  console.log('then');
+}).catch(function(){
+  console.log('catch');
+});
 
 console.log('global end');
