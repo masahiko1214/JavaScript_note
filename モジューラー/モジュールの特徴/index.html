@@ -27,7 +27,13 @@
             コースへ
         </a>
     </div>
-    <script src="main.js" defer></script>
+    <script nomodule> alert('nomodule') </script>
+    <!-- deferを加えると非同期処理になる -->
+    <script src="main.js" defer ></script>
+    <script src="main.js" defer ></script>
+    <h1> Module Lecture </h1>
+    <!-- moduleは自動的にdeferを付与されている -->
+    <script type="module" src="moduleB.js"></script>
     <script type="module" src="moduleB.js"></script>
 </body>
 
